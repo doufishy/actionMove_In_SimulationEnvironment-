@@ -16,10 +16,17 @@ wei_goto_client 向 wei_goto_server发送一个位姿pose，wei_goto_server向to
 
 运行命令：
 命令行1：加载gazebo仿真环境
+
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
+
 命令行2：启动turtlebot3的建图与导航
+
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch
+
 命令行3：启动action服务器 wei_goto_server
+
 rosrun wei_goto wei_goto_server
+
 命令行3：启动action clent wei_goto_client
+
 rosrun wei_goto wei_goto_client
